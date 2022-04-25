@@ -21,9 +21,12 @@ When on the profile page, users may click on the profile photo to select a profi
 ![AlreadyLoggedInScreen](https://user-images.githubusercontent.com/64273536/165026688-fec624ed-bfa3-4c51-b0fe-15c34fae2a33.PNG)
 
 ![MapsCapture](https://user-images.githubusercontent.com/64273536/165026770-5857f25b-90dc-4be5-87c2-c7bbd5eb9ecf.PNG)
+![GasStationInfo](https://user-images.githubusercontent.com/64273536/165129563-a6f323bc-cfc6-4794-9595-2458714ba9e2.PNG)
+![WebOrRoute](https://user-images.githubusercontent.com/64273536/165129617-fb650a82-2e4b-4ed2-83f3-387ab3308bc1.PNG)
+![GoogleMaps](https://user-images.githubusercontent.com/64273536/165129640-aa883433-104c-4f02-bf6b-e86b8f58002b.PNG)
+
 ![ProfileWitoutPic](https://user-images.githubusercontent.com/64273536/165026789-84420b25-ae93-462d-85b4-17db9e32f4f5.PNG)
 ![ProfileWithInfo](https://user-images.githubusercontent.com/64273536/165026796-035a568a-5b46-4bd4-9536-cc3f441d6c60.PNG)
-
 ![AddVehiclePage](https://user-images.githubusercontent.com/64273536/165026817-6b4441d8-74f8-4fbf-b53a-e82a7b85f309.PNG)
 ![AddFillupPage](https://user-images.githubusercontent.com/64273536/165026823-2567318c-0149-4382-86c5-d65d88c4f10c.PNG)
 
