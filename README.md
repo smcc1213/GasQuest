@@ -9,7 +9,7 @@ This is a cross-platform application that gives the location of nearby gas stati
 
 **How to Use GasQuest**
 
-Upon opening the page, users may sign up by tapping "sign up" on the login page. After providing some basic information on the sign up page, users will be directed to the maps page. Users will stay signed in to the application every time they open application, unless they press the Logout button located at the bottom of the profile page.
+Upon opening the page, users may sign up by tapping "sign up" on the login page. After providing some basic information on the sign up page, users will be directed to the maps page. Users will stay signed in to the application every time they open application unless they press the Logout button located at the bottom of the profile page.
 
 When on the maps page, users may click on the gas station icon on the bottom right to view nearby gas stations. Upon tapping a pin, the name of the gas station and user's distance from the gas station will appear. The user may then tap the name of the gas station to choose if they would like to be directed to the gas station's website or to Google Maps, where the route to the gas station and information about the gas price may be available.
 
