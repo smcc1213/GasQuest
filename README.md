@@ -15,8 +15,6 @@ When on the maps page, users may click on the gas station icon on the bottom rig
 
 When on the profile page, users may click on the profile photo to select a profile picture from their device. Tapping on the Add Fillup button will direct the user to the Add Fillup Page, where they can enter information about their fillup (i.e. gallons of gas received, amount paid), as well as their odometer reading. This information will be displayed on the user's profile. The average mpg will be displayed after adding two fillups. To change the home city label, simply click the edit icon next to the User's home city. Users may click on the "Add Vehicle" button to add the name or nickname of their vehicle which will be subsequently displayed on their profile.
 
-Users will stay signed in to the application every time they open 
-
 ---
 **Page Images**
 
