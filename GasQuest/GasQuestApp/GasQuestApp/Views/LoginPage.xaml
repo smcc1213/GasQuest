@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Shell.NavBarIsVisible="False"
+             x:Class="GasQuestApp.Views.LoginPage"
+             x:DataType="local:LoginPageViewModel"
+             xmlns:local="clr-namespace:GasQuestApp.ViewModels">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <local:LoginPageViewModel x:Key="vm"/>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" 
+                     Padding="45" 
+                     Spacing="25" 
+                     BackgroundColor="White">
+
+            <Frame HeightRequest="145"
+                   WidthRequest="145"
+                   IsClippedToBounds="False"
+                   HasShadow="False">
+
+                <Image Source="GasQuestLogo.png"
+                       Aspect="AspectFit">
+                </Image>
+            </Frame>
+
+            <Label Text="GasQuest"
+                   HorizontalOptions="Center"
+                   HeightRequest="80"
+                   FontSize="55"
+                   FontAttributes="Bold"/>
+
+            <Frame BackgroundColor="White" 
+                   HasShadow="False">
+
+                <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="10"/>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="240"/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+
+                    <Entry x:Name="EmailInput" 
+                           Text="{Binding Email, Mode=TwoWay}"
+                           Placeholder="Email"
+                           PlaceholderColor="Black" 
+                           HeightRequest="40"
+                           Keyboard="Email"
+                           TextColor="Black"
+                           Grid.Row="1"/>
+
+                    <Entry x:Name="PasswordInput" 
+                           Text="{Binding Password, Mode=TwoWay}"
+                           Placeholder="Password"
+                           PlaceholderColor="Black" 
+                           HeightRequest="40"
+                           IsPassword="True"
+                           TextColor="Black"
+                           Grid.Row="2"/>
+                    <ImageButton
+                        x:Name="showPasswordButton"
+                        Grid.Row="2"
+                        Grid.Column="1"
+                        Source="eye_closed.png"
+                        BackgroundColor="White"
+                        Clicked="showPassword_Clicked">
+                    </ImageButton>
+                </Grid>
+            </Frame>
+
+            <Button Text="Login" 
+                    TextColor="White"
+                    Command="{Binding LoginCommand}"
+                    FontAttributes="Bold" 
+                    FontSize="Large" 
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Black"/>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="2*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+
+                <Label TranslationX="125">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="Sign Up"
+                                  TextColor="Blue"
+                                  Grid.Column="0"
+                                  Grid.Row="0">
+                                <Span.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </Span.GestureRecognizers>
+                            </Span>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+
+            </Grid>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage> 

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GasQuestApp.Views.AddVehiclePage"
+             x:DataType="local:AddVehiclePageViewModel"
+             xmlns:local="clr-namespace:GasQuestApp.ViewModels">
+
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" 
+                     Padding="45" 
+                     Spacing="25">
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Go Back"
+                                  TextColor="Blue"
+                                  Grid.Column="0"
+                                  Grid.Row="0">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="GoBack_Tapped"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Image Source="GasQuestLogo.png" 
+                   HeightRequest="145">
+            </Image>
+
+            <Label Text="Add Vehicle"
+                   HorizontalOptions="Center"
+                   HeightRequest="75"
+                   FontSize="40"
+                   FontAttributes="Bold"/>
+
+            <Frame Background="white" HasShadow="False">
+                <StackLayout Orientation="Vertical" Spacing="30">
+                    <Entry x:Name="carName"
+                           Text="{Binding CarName, Mode=TwoWay}"
+                           Placeholder="Car Name (ex. 2017 Ford Focus)"
+                           PlaceholderColor="Black"
+                           FontSize="16"
+                           HeightRequest="40"
+                           Keyboard="Text"
+                           TextColor="Black"/>
+                </StackLayout>
+            </Frame>
+
+            <Button Command="{Binding AddVehicleCommand }"
+                    x:Name="AddVehicleButton" 
+                    Text="Add Vehicle" 
+                    TextColor="White"
+                    FontAttributes="Bold" 
+                    FontSize="Large" 
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Black" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

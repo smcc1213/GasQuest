@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GasQuestApp.Views.ProfilePage"
+             x:DataType="local:ProfilePageViewModel"
+             xmlns:local="clr-namespace:GasQuestApp.ViewModels">
+
+
+    <ContentPage.Content>
+
+        <!--Profile picture-->
+        <StackLayout Padding="0,10,0,0" 
+                     BackgroundColor="LightGray">
+
+            <Frame CornerRadius="100" 
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Padding="0"
+                   IsClippedToBounds="True"
+                   HasShadow="False">
+
+                <Image x:Name="profilePicture" 
+                       Source="{Binding PathSource, Mode=TwoWay}"
+                       Aspect="AspectFill">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding ProfileTappedCommand}"/>
+                    </Image.GestureRecognizers>
+                </Image>
+
+            </Frame>
+
+            <!--Personal Information Frame-->
+            <Frame CornerRadius="15"
+                   VerticalOptions="FillAndExpand"
+                   Margin="0,20,0,0"
+                   IsClippedToBounds="False">
+
+                <!--Blocks: 3 and 4 -->
+                <Grid Padding="25,10,25,0" 
+                      RowSpacing="0" 
+                      IsClippedToBounds="False">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Add Fill Up button-->
+                    <OnPlatform x:TypeArguments="ImageButton">
+                        <On Platform="iOS">
+                            <ImageButton Clicked="AddFillup_Clicked"
+                                         Grid.Row="1" 
+                                         Grid.Column="2"  
+                                         HorizontalOptions="End" 
+                                         VerticalOptions="CenterAndExpand" 
+                                         Source="FillupButtonIcon.png" 
+                                         CornerRadius="25" 
+                                         HeightRequest="50" 
+                                         WidthRequest="50" 
+                                         Aspect="AspectFit" 
+                                         TranslationX="-130"/>
+                        </On>
+                        <On Platform="Android">
+                            <ImageButton Clicked="AddFillup_Clicked"
+                                         Grid.Row="1" 
+                                         Grid.Column="2"
+                                         HorizontalOptions="End" 
+                                         VerticalOptions="CenterAndExpand" 
+                                         Source="FillupButtonIcon.png" 
+                                         CornerRadius="25" 
+                                         HeightRequest="50" 
+                                         WidthRequest="50" 
+                                         Aspect="AspectFit"
+                                         TranslationX="-120"/>
+                        </On>
+                    </OnPlatform>
+                            <OnPlatform x:TypeArguments="Label">
+                                <On Platform="iOS">
+                                <Label Text="Add Fillup"
+                                       FontSize="15"
+                                       Grid.Row="0"
+                                       LineBreakMode="NoWrap"
+                                       Grid.Column="2"
+                                       TranslationX="-95"
+                                       TranslationY="-10"/>
+                            </On>
+                            <On Platform="Android">
+                            <Label Text="Add Fillup"
+                                   FontSize="15"
+                                   Grid.Row="0"
+                                   LineBreakMode="NoWrap"
+                                   Grid.Column="2"
+                                   TranslationX="-85"
+                                   TranslationY="-5"/>
+                        </On>
+                        </OnPlatform>
+
+                    <!--Name, Location, and Car-->
+                    <Label x:Name="userName"
+                           Grid.Row="1" 
+                           Grid.Column="0" 
+                           Grid.ColumnSpan="3" 
+                           Text=""
+                           FontAttributes="Bold" 
+                           FontSize="30" 
+                           TranslationY="65" 
+                           TranslationX="50"/>
+
+                    <Label x:Name="UserCity"
+                           Grid.Row="2" 
+                           Grid.Column="0" 
+                           Text="{Binding UserCity, Mode=TwoWay}" 
+                           TextColor="#a5a2a2" 
+                           FontSize="16" 
+                           TranslationY="55" 
+                           TranslationX="120"/>
+
+                    <OnPlatform x:TypeArguments="ImageButton">
+                        <On Platform="iOS">
+                            <ImageButton x:Name="ChangeCityiOS"
+                                         Command="{Binding ChangeCityCommand}"
+                                         Grid.Row="2"
+                                         Grid.Column="1"
+                                         HeightRequest="15"
+                                         BackgroundColor="Transparent"
+                                         TranslationY="58"
+                                         TranslationX="90"
+                                         Source="editIcon.png"/>    
+                        </On>
+
+                        <On Platform="Android">
+                            <ImageButton x:Name="ChangeCity"
+                                         Command="{Binding ChangeCityCommand}"
+                                         Grid.Row="2"
+                                         Grid.Column="1"
+                                         Padding="0,0,0,5"
+                                         BackgroundColor="Transparent"
+                                         TranslationY="58"
+                                         TranslationX="90"
+                                         Source="editIcon.png"/>   
+                        </On>
+                    </OnPlatform>
+
+                    <Label Grid.Row="3" 
+                                   Grid.Column="0" 
+                                   Grid.ColumnSpan="2" 
+                                   Padding="0" 
+                                   FontSize="19"
+                                   FontAttributes="Bold"
+                                   TranslationY="80">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="Car:  "
+                                      FontSize="16"/>
+
+                                <Span x:Name="userCar"
+                                      Text="Add Car Here"
+                                      FontAttributes="Bold"/>
+                            </FormattedString>
+                        </Label.FormattedText>
+                    </Label>
+                    
+                    <OnPlatform x:TypeArguments="Button">
+                        <On Platform="iOS">
+                            <Button Grid.Row="3"
+                                    Grid.Column="1"
+                                    Text="Add Vehicle"
+                                    FontAttributes="Bold"
+                                    BackgroundColor="#3b71ac"
+                                    VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="Center"
+                                    FontSize="10" 
+                                    CornerRadius="10" 
+                                    HeightRequest="30" 
+                                    WidthRequest="80"
+                                    TranslationY="80" 
+                                    TranslationX="120"
+                                    Clicked="addVehicle_Clicked"/>
+                        </On>
+                        <On Platform="Android">
+                            <Button Grid.Row="3"
+                                    Grid.Column="1"
+                                    Text="Add Vehicle"
+                                    FontAttributes="Bold"
+                                    BackgroundColor="#3b71ac"
+                                    VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="Center"
+                                    FontSize="10" 
+                                    CornerRadius="10" 
+                                    HeightRequest="33" 
+                                    WidthRequest="100"
+                                    TranslationY="75" 
+                                    TranslationX="120"
+                                    Clicked="addVehicle_Clicked"/>
+                        </On>
+                    </OnPlatform>
+
+
+                    <!--Avg MPG and mileage information-->
+                    <Label Grid.Row="4" 
+                           Grid.Column="0" 
+                           Text="Average MPG" 
+                           TranslationX="-8"
+                           Style="{StaticResource StatsTitle}" />
+
+                    <Label x:Name ="MPG" 
+                           Grid.Row="5" 
+                           Grid.Column="0" 
+                           Text="{Binding MPG, Mode=TwoWay}"
+                           TranslationX="-8"
+                           Style="{StaticResource StatsDescription}"/>
+
+                    <Label Grid.Row="4" 
+                           Grid.Column="1" 
+                           Text="Total Spent" 
+                           Style="{StaticResource StatsTitle}"/>
+                    
+
+                    <Label x:Name ="TotalSpent" 
+                           Grid.Row="5" 
+                           Grid.Column="1" 
+                           Text="{Binding TotalSpent, Mode=TwoWay}" 
+                           Style="{StaticResource StatsDescription}"/>
+
+                    <OnPlatform x:TypeArguments="Button">
+                        <On Platform="iOS">
+                            <Button Grid.Row="6"
+                                    Grid.Column="1"
+                                    Text="Reset"
+                                    BackgroundColor="Transparent"
+                                    TextColor="CadetBlue"
+                                    VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="Center" 
+                                    HeightRequest="33" 
+                                    WidthRequest="60"
+                                    FontSize="10"
+                                    TranslationY="75"
+                                    Command="{Binding ResetDataCommand}"/>
+                        </On>
+                        <On Platform="Android">
+                            <Button Grid.Row="6"
+                                    Grid.Column="1"
+                                    Text="Reset"
+                                    BackgroundColor="Transparent"
+                                    TextColor="CadetBlue"
+                                    VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="Center" 
+                                    HeightRequest="33" 
+                                    WidthRequest="60"
+                                    FontSize="10" 
+                                    TranslationY="75"
+                                    Command="{Binding ResetDataCommand}"/>
+                        </On>
+                    </OnPlatform>
+
+                    <Label Grid.Row="4" 
+                           Grid.Column="2" 
+                           Text="Total Miles"
+                           TranslationX="8"
+                           Style="{StaticResource StatsTitle}"/>
+
+                    <Label x:Name ="OdometerReading" 
+                           Grid.Row="5" 
+                           Grid.Column="2" 
+                           Text="{Binding Mileage, Mode=TwoWay}" 
+                           TranslationX="8"
+                           Style="{StaticResource StatsDescription}"/>
+
+                    <!--LogOut Button-->
+                    <OnPlatform x:TypeArguments="Button">
+                        <On Platform="iOS">
+                            <Button Grid.Row="7"
+                                    Grid.Column="1"
+                                    Text="Log Out"
+                                    FontAttributes="Bold"
+                                    BackgroundColor="#CC3b71ac"
+                                    VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="Center"
+                                    TranslationY="80"
+                                    CornerRadius="10" 
+                                    HeightRequest="50" 
+                                    WidthRequest="100"
+                                    FontSize="13" 
+                                    Command="{Binding LogoutCommand}"/>
+                        </On>
+                        <On Platform="Android">
+                            <Button Grid.Row="7"
+                                    Grid.Column="1"
+                                    Text="Log Out"
+                                    FontAttributes="Bold"
+                                    BackgroundColor="#CC3b71ac"
+                                    VerticalOptions="CenterAndExpand"
+                                    HorizontalOptions="Center"
+                                    TranslationY="80"
+                                    CornerRadius="10" 
+                                    HeightRequest="50" 
+                                    WidthRequest="100"
+                                    FontSize="13" 
+                                    Command="{Binding LogoutCommand}"/>
+                        </On>
+                    </OnPlatform>
+                </Grid>
+            </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:maps="clr-namespace:Xamarin.Forms.GoogleMaps;assembly=Xamarin.Forms.GoogleMaps"
+             Shell.NavBarIsVisible="False"
+             x:Class="GasQuestApp.Views.MapsPage">
+    
+    <RelativeLayout>
+        <maps:Map x:Name="customMap" 
+                  MyLocationEnabled="True"
+                  MapType="Street"
+                  IsVisible="true"
+                  HasZoomEnabled="True"
+                  InfoWindowClicked="customMap_InfoWindowClicked"
+                  
+                  
+                  RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                      Property=Width,
+                      Factor=0,
+                      Constant=0}"
+                  RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                      Property=Height,
+                      Factor=0,
+                      Constant=0}"
+                  RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent,
+                      Property=Width,
+                      Factor=1,
+                      Constant=0}"
+                  RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent,
+                      Property=Height,
+                      Factor=1,
+                      Constant=0}" />
+
+        <ImageButton Source="my_location.png"
+                     Clicked="Location_Clicked"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                        Property=Width,
+                        Factor=0.623,
+                        Constant=100}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                        Property=Height,
+                        Factor=0.701,
+                        Constant=80}" />
+
+        <ImageButton Source="gas_pump.png"
+                     Clicked="GasButton_Clicked"
+                     RelativeLayout.XConstraint="{ConstraintExpression Type=RelativeToParent,
+                        Property=Width,
+                        Factor=0.64,
+                        Constant=100}"
+                     RelativeLayout.YConstraint="{ConstraintExpression Type=RelativeToParent,
+                        Property=Height,
+                        Factor=0.65,
+                        Constant=80}"/>
+    </RelativeLayout>
+</ContentPage>

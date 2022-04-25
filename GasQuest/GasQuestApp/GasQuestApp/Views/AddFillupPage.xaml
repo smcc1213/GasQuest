@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="GasQuestApp.Views.AddFillupPage"
+             x:DataType="local:AddFillupPageViewModel"
+             xmlns:local="clr-namespace:GasQuestApp.ViewModels">
+    
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" 
+                     Padding="45" 
+                     Spacing="25">
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <Span Text="Go Back"
+                                  TextColor="Blue"
+                                  Grid.Column="0"
+                                  Grid.Row="0">
+                            <Span.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="GoBack_Tapped"/>
+                            </Span.GestureRecognizers>
+                        </Span>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+
+            <Image Source="GasQuestLogo.png" 
+                   HeightRequest="145">
+            </Image>
+
+            <Label Text="Add New Fillup"
+                   HorizontalOptions="Center"
+                   HeightRequest="75"
+                   FontSize="40"
+                   FontAttributes="Bold"/>
+
+            <Frame Background="white" HasShadow="False">
+                <StackLayout Orientation="Vertical" Spacing="30">
+                    <Entry x:Name="GallonsReceived"
+                           Text="{Binding GallonsReceived, Mode=TwoWay}"
+                           Placeholder="Amount of gas (in gallons) received"
+                           PlaceholderColor="Black"
+                           FontSize="14"
+                           HeightRequest="40"
+                           Keyboard="Numeric"
+                           TextColor="Black"/>
+
+                    <Entry x:Name="AmountSpent"
+                           Text="{Binding AmountSpent, Mode=TwoWay}"
+                           Placeholder="Total price spent at the pump"
+                           PlaceholderColor="Black"
+                           FontSize="14"
+                           HeightRequest="40"
+                           Keyboard="Numeric"
+                           TextColor="Black"
+                           TextChanged="Entry_TextChanged"/>
+
+                    <Entry x:Name="OdometerReading"
+                           Text="{Binding OdometerReading, Mode=TwoWay}"
+                           Placeholder="Mileage amount from you odometer"
+                           PlaceholderColor="Black"
+                           FontSize="14"
+                           HeightRequest="40"
+                           Keyboard="Numeric"
+                           TextColor="Black"/>
+                </StackLayout>
+            </Frame>
+
+            <Button Command ="{Binding AddFillupCommand }"
+                    x:Name="ConfirmFillupButton" 
+                    Text="Confirm Fillup" 
+                    TextColor="White"
+                    FontAttributes="Bold" 
+                    FontSize="Large" 
+                    HorizontalOptions="FillAndExpand"
+                    BackgroundColor="Black" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
