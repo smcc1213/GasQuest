@@ -11,7 +11,7 @@ This is a cross-platform application that gives the location of nearby gas stati
 
 When on the maps page, users may click on the gas station icon on the bottom right to view nearby gas stations. Upon tapping a pin, the name of the gas station and user's distance from the gas station will appear. The user may then tap the name of the gas station to be directed to the gas station's website or to google maps, where the route to the gas station and information about the gas price may be available.
 
-When on the profile page, users may click on the profile photo to select a profile picture from their device. Tapping on the Add Fillup button will direct the user to the Add Fillup Page, where they can enter information about their fillup and odometer. This information will be displayed on the user's profile. The average mpg will be displayed after adding two fillups. Users may click on the "Add Vehicle" button to add the name or nickname of their vehicle which will be subsequently displayed on their profile.
+When on the profile page, users may click on the profile photo to select a profile picture from their device. Tapping on the Add Fillup button will direct the user to the Add Fillup Page, where they can enter information about their fillup (i.e. gallons of gas received, amount paid), as well as their odometer reading. This information will be displayed on the user's profile. The average mpg will be displayed after adding two fillups. Users may click on the "Add Vehicle" button to add the name or nickname of their vehicle which will be subsequently displayed on their profile.
 
 ---
 **Page Images**
