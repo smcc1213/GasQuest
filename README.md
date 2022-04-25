@@ -20,7 +20,7 @@ This is a cross-platform application that gives the location of nearby gas stati
 ![AddFillupPage](https://user-images.githubusercontent.com/64273536/165026823-2567318c-0149-4382-86c5-d65d88c4f10c.PNG)
 
 ---
-**Attributions for Icons**
+**Attributions for Some of the Icons Used in Application**
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/nawicon" title="nawicon">nawicon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/tanah-basah" title="Tanah Basah">Tanah Basah</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
 <a href="https://www.flaticon.com/free-icons/edit" title="edit icons">Edit icons created by Pixel perfect - Flaticon</a>
