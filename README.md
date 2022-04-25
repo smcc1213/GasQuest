@@ -18,21 +18,22 @@ When on the profile page, users may click on the profile photo to select a profi
 ---
 **Page Images**
 
-![LoginPage](https://user-images.githubusercontent.com/64273536/165026677-e08b7c1f-d4b0-41a9-a1e4-bf76bde7d1e3.PNG)
-![SignupPage](https://user-images.githubusercontent.com/64273536/165026742-8002750b-ec23-462f-8df8-36f32052b7ac.PNG)
-![AlreadyLoggedInScreen](https://user-images.githubusercontent.com/64273536/165026688-fec624ed-bfa3-4c51-b0fe-15c34fae2a33.PNG)
+![LoginPage](https://user-images.githubusercontent.com/64273536/165136151-afffbf51-a143-4e67-888c-fbace97798e5.PNG)
+![SignupPage](https://user-images.githubusercontent.com/64273536/165136173-347f8d36-2915-4856-9947-122e58587ec2.PNG)
+![AlreadyLoggedInScreen](https://user-images.githubusercontent.com/64273536/165136186-b0c059ef-c829-4603-8944-098e551d8e16.PNG)
 
-![GasStationInfo](https://user-images.githubusercontent.com/64273536/165129563-a6f323bc-cfc6-4794-9595-2458714ba9e2.PNG)
-![WebOrRoute](https://user-images.githubusercontent.com/64273536/165129617-fb650a82-2e4b-4ed2-83f3-387ab3308bc1.PNG)
-![GoogleMaps](https://user-images.githubusercontent.com/64273536/165129640-aa883433-104c-4f02-bf6b-e86b8f58002b.PNG)
+![GasStationInfo](https://user-images.githubusercontent.com/64273536/165136213-90a45340-4934-4dde-9643-2193b69c22fd.PNG)
+![WebOrRoute](https://user-images.githubusercontent.com/64273536/165136227-c6230dae-9e57-45e7-b757-62c316544589.PNG)
+![GoogleMaps](https://user-images.githubusercontent.com/64273536/165136241-32ff6c08-e840-4910-b749-5b53c43e0ce5.PNG)
 
-![ProfileWitoutPic](https://user-images.githubusercontent.com/64273536/165026789-84420b25-ae93-462d-85b4-17db9e32f4f5.PNG)
-![ProfileWithInfo](https://user-images.githubusercontent.com/64273536/165026796-035a568a-5b46-4bd4-9536-cc3f441d6c60.PNG)
+![ProfileWitoutPic](https://user-images.githubusercontent.com/64273536/165136283-f0a15c6a-c79b-4225-9642-f06c8169940e.PNG)
+![AddVehiclePage](https://user-images.githubusercontent.com/64273536/165136421-61587808-3d98-43f8-b7a9-631209ff55ac.PNG)
+![AddFillupPage](https://user-images.githubusercontent.com/64273536/165136436-dafc8f67-b2c1-4f61-a7d9-5392bd6637a5.PNG)
 
-![AddVehiclePage](https://user-images.githubusercontent.com/64273536/165026817-6b4441d8-74f8-4fbf-b53a-e82a7b85f309.PNG)
-![AddFillupPage](https://user-images.githubusercontent.com/64273536/165026823-2567318c-0149-4382-86c5-d65d88c4f10c.PNG)
+![ProfileWithInfo](https://user-images.githubusercontent.com/64273536/165136288-89384004-5869-4d5d-a391-cb37c2a48aa2.PNG)
 
 ---
+
 **Attributions for Some of the Icons Used in Application**
 
 <div>Icons made by <a href="https://www.flaticon.com/authors/nawicon" title="nawicon">nawicon</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div><div>Icons made by <a href="https://www.flaticon.com/authors/tanah-basah" title="Tanah Basah">Tanah Basah</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
