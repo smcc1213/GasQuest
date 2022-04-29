@@ -1,7 +1,7 @@
 # GasQuest
 **Created by Sean McConville and Adam Nethaway**
 
-This application was created for our final project in Software Engineering II at MidAmerica Nazarene University
+This application was created for our final project in Software Engineering II at MidAmerica Nazarene University. This project was created over the course of 8 one-week sprints.
 
 This is a cross-platform application that gives the location of nearby gas stations and allows the user to save information about their vehicle (i.e. money spent, average mpg, and total mileage) to their profile page on the app. This application was created using Xamarin. 
 
