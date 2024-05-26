@@ -28,11 +28,11 @@
           "other_platform_oauth_client": [
             {
               "client_id": "",
-              "client_type": 3
+              "client_type": 
             },
             {
               "client_id": "",
-              "client_type": 2,
+              "client_type": ,
               "ios_info": {
                 "bundle_id": ""
               }
