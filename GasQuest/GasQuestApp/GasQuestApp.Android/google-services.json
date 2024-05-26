@@ -1,40 +1,40 @@
 {
   "project_info": {
-    "project_number": "334660457804",
-    "project_id": "gasquest-38b4c",
-    "storage_bucket": "gasquest-38b4c.appspot.com"
+    "project_number": "",
+    "project_id": "",
+    "storage_bucket": ""
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:334660457804:android:06d8b0b4db9b2e6d2bebe9",
+        "mobilesdk_app_id": "",
         "android_client_info": {
-          "package_name": "com.companyname.gasquestapp"
+          "package_name": ""
         }
       },
       "oauth_client": [
         {
-          "client_id": "334660457804-t4130d3p34ngmavrggvhdb0blaqc6gjm.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "",
+          "client_type": 
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCKbQvr-5N-vqp1cHOLFkex6HBflAOBSns"
+          "current_key": ""
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "334660457804-t4130d3p34ngmavrggvhdb0blaqc6gjm.apps.googleusercontent.com",
-              "client_type": 3
+              "client_id": "",
+              "client_type": 
             },
             {
-              "client_id": "334660457804-2frhh30c6rjnmkbcffauhg2oh4b6e4no.apps.googleusercontent.com",
-              "client_type": 2,
+              "client_id": "",
+              "client_type": ,
               "ios_info": {
-                "bundle_id": "com.companyname.GasQuestApp"
+                "bundle_id": ""
               }
             }
           ]
