@@ -6,7 +6,7 @@ This application was created for our final project in Software Engineering II at
 This is a cross-platform application that gives the location of nearby gas stations and allows the user to save information about their vehicle (i.e. money spent, average mpg, and total mileage) to their profile page on the app. This application was created using Xamarin. 
 
 ---
-*NOTE: The Firebase server has been closed and values for the Google Services .plist and .json have been removed. For this application to work as intended, you will need to provide your own Google Services .plist and .json values and create your own Firebase server.*
+*NOTE: The Firebase account for this application has been closed and values for the Google Services .plist and .json have been removed. For this application to work as intended, you will need to provide your own Google Services .plist and .json values and create your own Firebase account.*
 
 **How to Use GasQuest**
 
